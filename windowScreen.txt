@@ -1,0 +1,41 @@
+In the vast landscape of the internet, communication protocols serve as the backbone of data exchange between clients and servers.
+Among these protocols, HTTP (Hypertext Transfer Protocol) stands as a cornerstone, facilitating the transfer of web content across the World Wide Web.
+
+
+HTTP/1.1: The Foundation:
+Introduced in 1997, HTTP/1.1 revolutionized the way web servers and clients communicated. However, as the digital landscape evolved, 
+the limitations of HTTP/1.1 became increasingly apparent. One of the most notable drawbacks was its inability to efficiently handle multiple concurrent requests. 
+Each HTTP/1.1 request required its dedicated connection, leading to a phenomenon known as "head-of-line blocking,
+" where the transmission of a single large file could delay the delivery of smaller resources.
+
+Enter HTTP/2: The Next Generation
+Recognizing the need for a more efficient protocol to cater to the evolving demands of the web, the Internet Engineering Task Force (IETF) introduced HTTP/2 in 2015. 
+Built upon the foundation of its predecessor, HTTP/2 aimed to address the shortcomings of HTTP/1.1 while introducing a slew of new features to enhance performance, 
+security, and reliability.
+
+
+Key Differences Summarized
+
+1.Multiplexing: HTTP/1.1 relies on multiple connections for parallelism, whereas HTTP/2 enables multiplexing over a single connection, enhancing efficiency and reducing latency.
+2.Header Compression: HTTP/2 compresses headers, minimizing overhead and improving bandwidth utilization compared to HTTP/1.1.
+3.Server Push: HTTP/2 introduces server push, allowing servers to proactively send resources to clients, thereby optimizing page load times.
+4.Binary Protocol: HTTP/2 adopts a binary framing layer, enhancing parsing efficiency and reducing complexity compared to the text-based format of HTTP/1.1.
+
+Object Representation
+
+// Difference between window, screen and document.
+In JavaScript, window, screen, and document are all objects representing different aspects of the browser environment:
+
+Window:
+The window object represents the browser window or tab that contains the document. It's the top-level object in the browser's JavaScript hierarchy.
+It acts as the global object for JavaScript code running in the browser environment.
+It provides properties and methods for manipulating the browser window, such as window.location for the URL of the current page, window.open() for opening new windows, and window.alert() for displaying alerts.
+Screen:
+The screen object represents the user's screen or monitor.
+It provides information about the user's screen, such as its width, height, color depth, and pixel density.
+Commonly used properties of the screen object include screen.width, screen.height, and screen.availWidth which give information about the screen's dimensions.
+Document:
+The document object represents the HTML document loaded in the browser window.
+It provides access to the structure and content of the document, allowing JavaScript code to manipulate the DOM (Document Object Model).
+Developers can use the document object to access and modify elements on the webpage, create new elements dynamically, handle events, and perform various other operations related to the document's content and structure.
+In summary, window represents the browser window, screen represents the user's screen, and document represents the HTML document loaded in the browser window. They serve different purposes but are all essential parts of the browser environment accessible to JavaScript code.
